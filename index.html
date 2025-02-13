@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Suhu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 style="color: #0288d1;">Kalkulator Suhu</h2>
+        <label for="temperature">Masukkan Suhu</label>
+        <input type="number" id="temperature" placeholder="Masukkan suhu" required>
+        <select id="scale">
+            <option value="celsius">Celsius (°C)</option>
+            <option value="fahrenheit">Fahrenheit (°F)</option>
+            <option value="kelvin">Kelvin (K)</option>
+            <option value="reamur">Reamur (°R)</option>
+        </select>
+        <button onclick="convertTemperature()">Konversi</button>
+        <div class="result">Celsius: <span id="celsius">-</span></div>
+        <div class="result">Fahrenheit: <span id="fahrenheit">-</span></div>
+        <div class="result">Kelvin: <span id="kelvin">-</span></div>
+        <div class="result">Reamur: <span id="reamur">-</span></div>
+        <div class="explanation" id="explanation"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
